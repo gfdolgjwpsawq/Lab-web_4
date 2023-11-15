@@ -1,0 +1,13 @@
+let button = document.querySelector("#toggle_checkbox");
+
+
+
+button.addEventListener("click", function() {
+        document.body.classList.toggle("dark-theme");
+});
+
+
+
+
+
+

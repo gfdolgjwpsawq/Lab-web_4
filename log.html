@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="css/reg.css">
+</head>
+<body class="">
+    <header>
+        <div class="logo">
+            <span class="fashion" class="noselect">FASHION</span>
+            <div class="rectanglefashion" class="noselect"></div>
+        </div>
+    </header>
+    <section class="login-box">
+        <h2>Вход</h2>
+        <form>
+            <p><label>Почта<em>*</em></label></p><input class="text-box" type="email" id="login" placeholder="E-mail" autocomplete="off">
+            <p><label>Пароль<em>*</em></label></p><input class="text-box" type="password" id="password" placeholder="Пароль" autocomplete="off" minlength="6" maxlength="24">
+            <input type="checkbox" id="togglePassword"><span> Показать пароль</span>
+            <p><input type="submit" value="Log in" class="button_submit"></p>
+        </form>
+    </section>
+
+    <script>
+        document
+        .getElementById("togglePassword")
+        .addEventListener("change", function() {
+            let passwordInput = document.getElementById("password");
+            if (this.checked) {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+           -o-user-select: none;
+           pointer-events: none;    
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+html{
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display:inline;
+}
+body{
+    margin: 0 auto;
+    position: relative;
+    color: #E5E5E5;
+    background: rgb(32, 32, 32);
+
+
+    overflow: hidden;
+}
+body a{
+    color: #f5f8ff;
+}
+
+/*ЛОГОТИП*/
+
+
+.logo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+    top: 25px;
+    zoom: 1.5;
+}
+.fashion{
+    color: #171717;
+    font-family: PT Serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.5px;
+    position: relative;
+
+    color:  #ececec;
+}
+.rectanglefashion{
+    position: relative;
+    top:-8px;
+    right: 2px;
+    width: 125px;
+    height: 6px;
+    flex-shrink: 0;
+    opacity: 0.35;
+    background: #C9A96E;
+
+    z-index: -1;
+    background: #b69c68;
+    opacity: 0.6;
+}
+
+/*форма*/
+
+em{
+    color: rgb(202, 65, 65);
+}
+
+.login-box{
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    width: 500px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.login-box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.login-box .text-box{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+}
+
+.login-box p{
+    text-align: center;
+}
+
